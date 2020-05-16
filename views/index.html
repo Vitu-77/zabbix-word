@@ -28,17 +28,23 @@
                     </button>
                 </div>
                 <div class='slider'>
-                    <div class='img-container'>
-                        <img src='/images/zabbix-reports-banner-small.png' />
+                    <div class='img-container' id='site-cover-container'>
+                        <img src='/images/zabbix-reports-banner-small.png' id='site-cover' />
                     </div>
                     <div class='description'>
-                        <h2>Zabbix Reports</h2>
-                        <p>Com o Zabbix Reports, você pode gerar relatórios a partir dos seus Zabbixes e customizá-los
-                            como quiser
-                        </p>
-                        <button class='primary'>
-                            Ver mais
-                        </button>
+                        <div id='decription-container'>
+                            <h2 id='description-title'>Zabbix Reports</h2>
+                            <p id='description-paragraph'>
+                                Com o Zabbix Reports, você pode gerar relatórios a partir dos seus Zabbixes e
+                                customizá-los
+                                como quiser
+                            </p>
+                        </div>
+                        <a id='see-more' href='http://zabbix.reports.com' target='_blank' rel='noopener noreferer'>
+                            <button class='primary'>
+                                Ver mais
+                            </button>
+                        </a>
                     </div>
                 </div>
                 <div class='arrow-container'>
@@ -49,8 +55,9 @@
             </article>
 
             <div class='carrousell-index-container'>
-                <span class='carrousell-index active'></span>
-                <span class='carrousell-index'></span>
+                <span index='1' class='carrousell-index active'></span>
+                <span index='2' class='carrousell-index'></span>
+                <span index='3' class='carrousell-index'></span>
             </div>
         </section>
 
