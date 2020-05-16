@@ -1,0 +1,1 @@
+Sitemap: https://zabbix-world.herokuapp.com/sitemap.xml

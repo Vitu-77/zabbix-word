@@ -516,4 +516,10 @@ footer > div > span {
     margin-bottom: 2px;
   }
 }
+
+#seo-words-injector {
+  display: none;
+  width: 0;
+  visibility: hidden;
+}
 /*# sourceMappingURL=index.css.map */

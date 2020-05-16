@@ -19,6 +19,7 @@ const descriptionParagraph = document.querySelector('#description-paragraph');
 const seeMore = document.querySelector('#see-more');
 const descriptionOuterContainer = document.querySelector('.description');
 const descriptionInnerContainer = document.querySelector('#decription-container');
+const seoWordsInjector = document.querySelector('#seo-words-injector');
 
 const clearActiveClass = () => slidesIndicators.forEach(indicator => indicator.classList.remove('active'));
 const activeIndicator = () => slidesIndicators[carousellIndex - 1].classList.add('active');
@@ -101,8 +102,18 @@ const prevSlide = () => {
     return alterSlide();
 }
 
+const injectWords = () => {
+    let content = '';
+    SLIDES.forEach(slide => content += content.concat(slide.description));
+    const text = document.createTextNode(content);
+    seoWordsInjector.appendChild(text);
+    console.log(content)
+}
+
 window.onload = () => {
     setSeeMorePosition();
+
+    injectWords();
 
     slidesIndicators.forEach((indicator) => {
         return indicator.addEventListener('click', (e) => {
