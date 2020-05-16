@@ -1,14 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='pt-br'>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+    <link rel='stylesheet' href='/stylesheets/index.css'>
+    <link rel='shortcut icon' href='/images/favicon.ico' />
+
+    <title>Zabbix World</title>
 </head>
 
 <body>
-    <h1>olá mundo zabbix</h1>
+    <header>
+        <h1>Zabbix World</h1>
+        <img src='/images/logo.svg' alt='Zabbix World' />
+    </header>
+
+    <main>
+        <section class='home'>
+            <h2 class='solutions'>Nossas Soluções</h2>
+
+            <article class='carrousell'>
+                <div class='arrow-container'>
+                    <button id='back'>
+                        <img src='/images/arrow-left.svg' alt='anterior' class='arrow' />
+                    </button>
+                </div>
+                <div class='slider'>
+                    <div class='img-container'>
+                        <img src='/images/zabbix-reports-banner-small.png' />
+                    </div>
+                    <div class='description'>
+                        <h2>Zabbix Reports</h2>
+                        <p>Com o Zabbix Reports, você pode gerar relatórios a partir dos seus Zabbixes e customizá-los
+                            como quiser
+                        </p>
+                        <button class='primary'>
+                            Ver mais
+                        </button>
+                    </div>
+                </div>
+                <div class='arrow-container'>
+                    <button id='next'>
+                        <img src='/images/arrow-right.svg' alt='próximo' class='arrow' />
+                    </button>
+                </div>
+            </article>
+
+            <div class='carrousell-index-container'>
+                <span class='carrousell-index active'></span>
+                <span class='carrousell-index'></span>
+            </div>
+        </section>
+
+        <section class='newsletter'>
+            <h2>Newsletter</h2>
+
+            <div class='newsletter-content'>
+                <article>
+                    <p>Receba novidades sobre atualizações e lançamentos dos novos produtos</p>
+                </article>
+                <form method="POST" action="/subscribe">
+                    <input placeholder='Nome' name='name' type='text' required autocomplete='off' />
+                    <input placeholder='Email' name='email' type='email' required autocomplete='off' class='last' />
+                    <button class='secondary' type='submit'>Assinar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <img src='/images/footer-logo.svg' alt='Zabbix World' />
+            <p>Copyright &copy 2020 Service Monit. Todos os direitos reservados</p>
+            <span>Zabbix World</span>
+        </div>
+    </footer>
+
+
+    <script type='module' src='/javascripts/constants.js'></script>
+    <script type='module' src='/javascripts/carousell.js'></script>
 </body>
 
 </html>
