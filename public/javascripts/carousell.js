@@ -107,7 +107,6 @@ const injectWords = () => {
     SLIDES.forEach(slide => content += content.concat(slide.description));
     const text = document.createTextNode(content);
     seoWordsInjector.appendChild(text);
-    console.log(content)
 }
 
 window.onload = () => {

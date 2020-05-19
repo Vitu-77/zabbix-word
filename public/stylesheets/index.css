@@ -12,6 +12,44 @@ main {
   width: 100%;
 }
 
+main.main-subscription {
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(292.62deg, #f57b51 -8.19%, #d63447 96.8%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main.main-subscription > img {
+  margin-bottom: 60px;
+}
+
+main.main-subscription > h1 {
+  color: #ffffff;
+  font-size: 38px;
+}
+
+main.main-subscription > p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+main.main-subscription > a {
+  margin-top: 25px;
+}
+
 header {
   position: absolute;
   width: 100%;
